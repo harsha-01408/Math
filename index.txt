@@ -1,0 +1,30 @@
+ALCATRAZ2 - GO GOA GONE
+#math #combinatorics #ad-hoc-1 #adhoc
+
+You and 8 friends plan a trip and will pool money together. Some pairs of members have a “cold war”: if one goes, the other won’t. You want to choose a subset of members to maximize the total pooled money, subject to these conflicts.
+
+Input
+- One line with 8 space-separated integers: the money each of the 8 members would contribute (members are numbered 1..8 in this order).
+- One line with an integer P: the number of conflicting pairs.
+- The next P lines each contain two integers u v (1 ≤ u, v ≤ 8), indicating that members u and v cannot both go.
+
+Output
+Print a single integer: the maximum total money that can be pooled without selecting any conflicting pair.
+
+Constraints
+- All values fit in 32-bit signed integers.
+
+Example
+Input:
+3 14 5 2 3 4 1 9
+4
+1 2
+2 3
+4 5
+7 8
+
+Output:
+30
+
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX

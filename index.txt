@@ -118,3 +118,32 @@ Sample Output
 
 
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+Problem: Count x such that f(x) = n
+
+Given an integer n (1 ≤ n ≤ 10^18), find how many positive integers x satisfy f(x) = n, where f is defined as:
+
+f(x) =
+- 0,                  if x = 1
+- x/2 + f(x/2),       if x is even
+- x*(x - 1) / 2,      if x is odd
+
+Task:
+- Compute the number of x ≥ 1 such that f(x) = n.
+- (Optional) Also output all such x in increasing order.
+
+Input:
+- A single integer n.
+
+Output:
+- First line: an integer k — the number of valid x.
+- Second line (optional if k = 0): k space-separated integers, the values of x in strictly increasing order.
+
+Constraints:
+- 1 ≤ n ≤ 10^18
+
+Notes:
+- Use 64-bit or wider integer arithmetic as needed.
+
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX

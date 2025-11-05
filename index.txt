@@ -147,3 +147,42 @@ Notes:
 
 
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+Problem — Max-Sum Unimodal B (No-Valleys)
+
+You are given an array a[1..n]. Build another array b[1..n] such that:
+1) 0 ≤ b[i] ≤ a[i] for every i.
+2) There do NOT exist indices j < i < k with b[j] > b[i] < b[k].
+   (i.e., b has no “valley”; equivalently, b is nondecreasing up to some peak
+   (or plateau) and then nonincreasing — a unimodal shape.)
+
+Goal: Maximize the sum S = b[1] + b[2] + … + b[n].
+
+Constraints
+- 1 ≤ n ≤ 1e6
+- 1 ≤ a[i] ≤ 1e9
+
+Input Format
+- First line: integer n
+- Second line: n integers a1 a2 … an
+
+Output Format
+- First line: a single integer — the maximum possible sum S.
+- Second line: n integers b1 b2 … bn forming one optimal array b.
+  (Any one optimal b is accepted.)
+
+Example
+Input:
+4
+5 2 7 3
+
+Output:
+14
+2 2 7 3
+
+Notes
+- Use 64-bit integers for sums.
+- The shape constraint forbids any strict “> < >” pattern around any index.
+
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX

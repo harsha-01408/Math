@@ -71,3 +71,50 @@ Output
 
 
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+GCD of k-Subsets (Exact)
+
+You are given an array A of N positive integers.
+You are also given Q queries. Each query provides two integers k and g.
+
+For each query (k, g), compute the number of size-k subsets of A whose GCD is exactly g.
+Output each answer modulo 1,000,000,007.
+
+Input
+-----
+N
+A1 A2 ... AN
+Q
+k1 g1
+k2 g2
+...
+kQ gQ
+
+Output
+------
+Q lines, where the i-th line is the answer for query (ki, gi) modulo 1,000,000,007.
+
+Notes
+-----
+- A subset uses distinct indices; order does not matter.
+- If no size-k subset has GCD exactly g, print 0.
+
+Sample Input
+------------
+5
+2 3 4 6 9
+4
+2 3
+2 2
+3 1
+2 1
+
+Sample Output
+-------------
+3
+3
+8
+4
+
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX

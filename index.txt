@@ -186,3 +186,43 @@ Notes
 
 
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+Problem: Minimize g(a, b) with a + b = N
+
+You are given a positive integer N.
+Your task is to find ordered pairs of positive integers (a, b) such that:
+  1) a + b = N
+  2) g(a, b) = gcd(a, b) + lcm(a, b) is minimized.
+
+For each test case, determine:
+  • The number of ordered pairs (a, b) for which g(a, b) attains its minimum value.
+
+Input Format
+• The first line contains an integer T — the number of test cases.
+• Each of the next T lines contains a single integer N.
+
+Output Format
+• For each test case, output a single integer — the number of ordered pairs (a, b) such that
+  a + b = N and g(a, b) is minimized.
+
+Constraints
+• 1 ≤ T ≤ 100
+• 2 ≤ N ≤ 10^9
+
+Sample Input
+2
+6
+8
+
+Sample Output
+2
+2
+
+Explanation (for N = 6)
+All ordered pairs (a, b) with a + b = 6 are:
+(1,5), (2,4), (3,3), (4,2), (5,1).
+The minimum value of g(a,b) = gcd(a,b) + lcm(a,b) occurs for (2,4) and (4,2).
+Hence, the answer is 2.
+
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX

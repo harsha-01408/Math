@@ -301,3 +301,32 @@ Constraints:
 - 1 <= n <= 10^9
 
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+You are given a string s consisting of the characters '0', '1', and '!'.
+
+Each '!' can be replaced independently by either '0' or '1'. For a given replacement (i.e., a concrete string), count the total number of subsequences that are "01" or "10".
+
+A subsequence is formed by picking any two positions i < j where s[i] = '0' and s[j] = '1' (for "01"), or s[i] = '1' and s[j] = '0' (for "10").
+
+The total count for a string is count_01 + count_10.
+
+The task is to choose replacements for all '!' such that the minimum possible total count (over all 2^k expansions, where k is the number of '!') is returned, modulo 10^9 + 7.
+
+Example 1:
+
+Input: s = "0!1!" Output: 3 Explanation: The minimum total is 3, as shown in the expansions:
+"0010": 3
+"0011": 4
+"0110": 4
+"0111": 3
+
+Constraints:
+1 <= s.length <= 10^5
+s consists only of '0', '1', and '!'.
+
+
+
+Return the answer modulo 10^9 + 7.
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX

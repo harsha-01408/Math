@@ -268,3 +268,36 @@ Constraints:
 1 ≤ A[i] ≤ 1000
 
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+Problem
+
+You are given an integer n. Compute the number of valid ways to color an n x 3 grid using three colors: Red (R), Green (G), and Blue (B).
+
+The coloring must satisfy the following constraints:
+
+- Row Constraint: No row can be monochromatic. That is, in each row, the three cells must use at least two different colors. (Forbidden: RRR, GGG, BBB.)
+- Column Constraint: No column can be monochromatic. That is, in each column, the n cells must use at least two different colors.
+
+Return the number of valid colorings.
+
+Example 1:
+
+Input: n = 1  
+Output: 0  
+Explanation: With 1 row, each column has only one cell, so it is trivially monochromatic, violating the column constraint.
+
+Example 2:
+
+Input: n = 2  
+Output: 174
+
+Example 3:
+
+Input: n = 3  
+Output: 9750
+
+Constraints:
+
+- 1 <= n <= 10^9
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX

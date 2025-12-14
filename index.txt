@@ -330,3 +330,38 @@ s consists only of '0', '1', and '!'.
 Return the answer modulo 10^9 + 7.
 
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+Make the Array Empty
+
+Given an array of n integers, you can repeatedly perform the following operation:
+
+- Consider m to be the current size of the array.
+- You may remove k (1 <= k <= m) elements from the array if the sum of 2 raised to the power of each of these elements equals 2 raised to some integer p (where p is non-negative). That is, you can remove elements with values a1, a2, ..., ak only if:
+    2^a1 + 2^a2 + ... + 2^ak = 2^p
+  for some integer p >= 0.
+
+Your task is to determine the minimum number of such operations required to remove all elements from the array.
+
+Example:
+n = 5, arr = [1, 1, 3, 2, 3]
+The array can be emptied in 2 operations:
+1) Remove elements at positions 1, 2, and 4 because 2^1 + 2^1 + 2^2 = 2^3.
+   Remaining array: [3, 3]
+2) Remove the remaining elements because 2^3 + 2^3 = 2^4.
+   Array becomes empty.
+
+Hence, the answer is 2.
+
+Function Description:
+Complete the function findMinOperations with parameter:
+- int arr[n]: an array of integers
+
+Return:
+- int: the minimum number of operations required to remove all elements from the array
+
+Constraints:
+1 <= n <= 1e5
+0 <= arr[i] <= 1e6
+
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX

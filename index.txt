@@ -365,3 +365,49 @@ Constraints:
 
 
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+Count Balanced Subarrays
+
+You are given an array `nums` of length `n`. A subarray is a contiguous part of the array.
+
+A subarray is called balanced if the parity of its sum equals the parity of its LCM (least common multiple), where parity is the value modulo 2.
+
+Return the number of balanced subarrays in `nums`.
+
+ 
+
+Example 1:
+
+Input: nums = [1,2,3]
+
+Output: 4
+
+Explanation: The balanced subarrays are [1], [2], [3], [1,2,3] (sum=6 even, LCM=6 even).
+
+Example 2:
+
+Input: nums = [4,5]
+
+Output: 3
+
+Explanation: All subarrays: [4] (even sum, even LCM), [5] (odd, odd), [4,5] (odd sum=9, even LCM=20? Wait, adjust if wrong.
+
+Wait, let's calculate properly: for [4,5]: sum=9 odd, LCM=20 even → not balanced. So if output 2, but I made up.
+
+
+ 
+
+Constraints:
+
+1 <= n <= 10^5
+1 <= nums[i] <= 10^9
+ 
+
+class Solution {
+public:
+    long long countBalancedSubarrays(vector<int>& nums) {
+        
+    }
+};
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX

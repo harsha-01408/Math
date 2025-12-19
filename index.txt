@@ -499,3 +499,62 @@ The subsequence (9, 9) can be formed from the array elements at index 0 and 4. I
 
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
+Islands
+Problem Description
+The map contains Islands, named from Island 1 to Island N. For any two islands I and Island J (where I ≠ J), you can go to Island J from Island I only if the value I divides J (i.e., I is a divisor of J).
+Given the value for the last island, N, find the number of ways to reach Island N from the first Island, that is, Island 1.
+Note: Assume 1-based indexing.
+
+Function Description
+Complete the solve function. This function takes the following parameter and returns the required answer.
+N: An integer representing the index of the destination island.
+The function should return a long integer representing the number of ways to reach Island N from Island 1.
+long long solve(int N);
+
+Input Format
+The first line contains an integer T, which represents the number of test cases.
+For each test case:
+The first line contains an integer N denoting the Island to reach.
+
+Output Format
+For each test case, print a long integer denoting the number of ways to reach Island N from Island 1.
+
+Constraints
+1 ≤ T ≤ 10^6
+1 ≤ N ≤ 10^6
+Time Limit: 10 sec(s) for each input file
+Memory Limit: 256 MB
+
+Example
+Sample Input
+3
+2
+4
+6
+
+Sample Output
+1
+2
+3
+
+Explanation
+The first line indicates the number of test cases T = 3.
+The first test case:
+Given N = 2.
+There exists only 1 way to reach Island 2 from Island 1:
+Island 1 → Island 2
+
+The second test case:
+Given N = 4.
+There exist 2 ways to reach Island 4 from Island 1:
+Island 1 → Island 4
+Island 1 → Island 2 → Island 4
+
+The third test case:
+Given N = 6.
+There exist 3 ways to reach Island 6 from Island 1:
+Island 1 → Island 6
+Island 1 → Island 2 → Island 6
+Island 1 → Island 3 → Island 6
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX

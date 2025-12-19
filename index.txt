@@ -445,3 +445,57 @@ Output:
 100663296
 
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+The best subsequence
+Description
+You are given an array a of size n and an integer k.
+The special value of a subsequence p is equal to Σ_{i=2..k} |p_i - p_{i-1}|, where p_i denotes the ith element of the subsequence p.
+Find the minimum special value among all subsequences of array a that have a length of k. If it is not possible to apply the operations (e.g., if k < 2), the special value is 0.
+Note: A subsequence is a sequence that can be derived from the given sequence by deleting zero or more elements without changing the order of the remaining elements.
+
+Function Signature
+You must complete the solve function.
+long long solve(int n, vector<int> a, int k) {
+    // Your code goes here
+}
+
+Parameters
+int n: The size of the array a.
+vector<int> a: The elements of the array.
+int k: The required length of the subsequence.
+
+Return
+A single integer representing the minimum special value.
+
+Input Format
+The first line contains a single integer n.
+The second line contains n space-separated integers, the elements of array a.
+The third line contains a single integer k.
+
+Output Format
+Print a single integer representing the minimum special value among all subsequences of array a having length k.
+
+Constraints
+1 ≤ n ≤ 10^5
+1 ≤ k ≤ min(n, 50)
+1 ≤ a_i ≤ 10^6
+
+Example
+Sample Input
+5
+9 5 1 4 9
+2
+
+Sample Output
+0
+
+Explanation
+Given:
+N = 5
+A = [9, 5, 1, 4, 9]
+K = 2
+We need to find a subsequence of length 2 with the minimum special value. The special value for a subsequence of length 2, say (p1, p2), is |p2 - p1|.
+The subsequence (9, 9) can be formed from the array elements at index 0 and 4. Its special value is |9 - 9| = 0. Since the special value cannot be negative, this is the minimum possible value.
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+

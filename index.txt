@@ -411,3 +411,37 @@ public:
 };
 
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+Gambler's Dice
+
+You are given an n-ary perfect tree with k levels.
+
+You need to mark each node of this tree with a number on a dice (1 to 6) such that the
+resulting tree is "Gambler Friendly".
+
+A tree is Gambler Friendly if the following holds:
+- For every node marked with a number p (1 <= p <= 6), every adjacent node of the tree
+  is marked with a number q such that:
+    * p and q are adjacent on a standard dice, and
+    * p != q
+Note: A number is not adjacent to itself on a dice.
+
+Task:
+Calculate the number of different ways to label (paint) all nodes of the tree so that the
+tree is Gambler Friendly. Since the number can be very large, output the answer modulo
+(10^9 + 7).
+
+Input Format:
+Two space-separated integers: n and k
+
+Constraints:
+2 <= n <= 10^9
+1 <= k <= 10^9
+
+Example:
+Input:
+3 3
+Output:
+100663296
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX

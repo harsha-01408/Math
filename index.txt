@@ -588,3 +588,55 @@ Output:
 3.3333333333
 
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+Similar Strings
+
+Chota Pendrive likes to play with strings a lot. For a given string s, he obtains its compressed string in the following way:
+
+- In a single operation, he takes any two consecutive equal characters of s, and removes one of them.
+- He keeps doing this operation as long as possible.
+
+The resulting string will be the compressed string of s.
+Example: if the initial string is "abaaabb", its compressed form is "abab".
+
+Two strings s and t are said to be similar if their compressed strings are equal.
+
+You have to find the number of ordered pairs of similar strings (s, t) having length at least one and at most N.
+Both s and t contain lowercase English alphabet letters.
+
+As the answer could be large, print it modulo 1000000007 (10^9 + 7).
+
+Input Format:
+- The first line contains an integer T denoting the number of test cases.
+- Each test case contains a single integer N.
+
+Output Format:
+- For each test case, print a single integer corresponding to the answer.
+
+Constraints:
+1 ≤ T, N ≤ 5000
+
+Sample Input:
+2
+1
+2
+
+Sample Output:
+26
+754
+
+Explanation:
+For N = 1:
+s and t will be equal and will contain the same character. There are 26 possibilities.
+
+For N = 2:
+Case 1: s = t:
+  - length 1: 26 possibilities
+  - length 2: 26 * 26 possibilities
+Case 2: s = "aa", t = "a": 26 possibilities
+Case 3: s = "a", t = "aa": 26 possibilities
+Total = 26 + 26*26 + 26 + 26 = 754 ordered pairs.
+
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX

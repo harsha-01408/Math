@@ -640,3 +640,33 @@ Total = 26 + 26*26 + 26 + 26 = 754 ordered pairs.
 
 
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+Problem Statement
+
+A monitor initially displays the number 1. There are N buttons, and the i-th button has a value A[i].
+If the i-th button is pressed, the number on the monitor is multiplied by A[i].
+Each button can be pressed at most once.
+
+Mars and Mourad win the game if they can display the number M by pressing exactly three buttons.
+
+Task:
+Given N, M, and the array A, compute the total number of ways to choose exactly three distinct buttons
+(i, j, k) such that:
+
+A[i] * A[j] * A[k] = M
+
+The order of pressing does not matter (i.e., choosing the same three indices in a different order is
+considered the same way).
+
+Because the answer can be large, output it modulo 10^9 + 7.
+
+Input Format
+- The first line contains an integer N (number of buttons).
+- The second line contains an integer M (target number).
+- The next N lines each contain an integer A[i].
+
+Output Format
+- Print one integer: the number of valid ways modulo 10^9 + 7.
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+

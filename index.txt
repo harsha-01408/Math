@@ -670,3 +670,29 @@ Output Format
 
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
+Problem: Total XP Bob Can Collect
+
+You are given two arrays of length N:
+
+- A[1..N]: soldiers’ powers
+  - N is even
+  - Each value from 1 to N/2 appears exactly twice in A
+- Bonus[1..N]: bonus XP values of treasure chests
+
+For each index i (1 ≤ i ≤ N), do the following:
+
+1) Find the smallest index R > i such that:
+   A[R] is a multiple of A[i]
+   (i.e., A[R] % A[i] == 0).
+
+2) If no such R exists, the XP gained for this i is 0.
+
+3) Otherwise, the XP gained for this i is:
+   X = max(Bonus[i], Bonus[i+1], ..., Bonus[R])
+
+The total XP is the sum of X over all i from 1 to N.
+
+Output the total XP.
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+

@@ -710,3 +710,32 @@ Output:
 Return the total number of valid ways to fill the whole grid, modulo 10^9 + 7.
 
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+You are given two different prime numbers: coinA and coinB.
+
+You can make money amounts using:
+    a * coinA + b * coinB
+where a and b are any non-negative integers (0, 1, 2, ...).
+
+Every positive integer price exists in the market (1, 2, 3, 4, ...).
+
+Some prices cannot be formed using only these two coins.
+
+Your task:
+Find the largest positive integer price that cannot be formed
+using any combination of coinA and coinB.
+
+Example:
+coinA = 3
+coinB = 7
+
+Possible amounts:
+0, 3, 6, 7, 9, 10, 12, 13, 14, ...
+
+Impossible amounts:
+1, 2, 4, 5, 8, 11
+
+The largest impossible amount is:
+11
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX

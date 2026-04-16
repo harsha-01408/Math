@@ -793,3 +793,38 @@ For a fixed k, the cost to convert x into a multiple of k is:
 You must choose the k >= 2 that minimizes the total cost over all elements.
 
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+You are given an integer array resolutionTimes, where resolutionTimes[i]
+represents the resolution time (in minutes) of the i-th case.
+
+Return the number of pairs of indices (i, j) such that:
+- 0 <= i < j < resolutionTimes.size()
+- resolutionTimes[i] + resolutionTimes[j] is a positive multiple of 60
+
+Pairs are considered different if their indices are different, even if the
+values are the same.
+
+Example 1:
+Input: resolutionTimes = [30, 30, 60]
+Output: 1
+Explanation:
+The only valid pair is (0, 1):
+30 + 30 = 60, which is a positive multiple of 60.
+
+(0, 2) gives 90, not divisible by 60.
+(1, 2) gives 90, not divisible by 60.
+
+Function signature:
+long multipleSums(vector<int>& resolutionTimes);
+
+Constraints:
+- 1 <= resolutionTimes.size() <= 1e6
+- 1 <= resolutionTimes[i] <= 1e9
+
+Note:
+Since all values are positive, this is equivalent to counting pairs whose sum
+is divisible by 60.
+
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX

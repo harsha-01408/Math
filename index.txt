@@ -739,3 +739,57 @@ The largest impossible amount is:
 11
 
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+You are given an integer array recordCounts, where recordCounts[i] represents
+the number of records currently assigned to the i-th group.
+
+In one operation, you may choose any one element and either:
+- increase it by 1, or
+- decrease it by 1.
+
+Your goal is to make all elements divisible by the same integer k, where k >= 2.
+
+Return the minimum number of operations required.
+
+Formally:
+Choose an integer k >= 2 such that for every i,
+    recordCounts[i] can be transformed into a multiple of k
+using the fewest total +1 / -1 operations.
+
+Example 1:
+Input: recordCounts = [4, 7, 5, 11, 15]
+Output: 4
+Explanation:
+Choose k = 2.
+- 4 is already divisible by 2
+- 7 -> 6  (1 operation)
+- 5 -> 4  (1 operation)
+- 11 -> 10 (1 operation)
+- 15 -> 14 (1 operation)
+Total = 4
+
+Example 2:
+Input: recordCounts = [6, 10, 14]
+Output: 2
+Explanation:
+Choose k = 4.
+- 6 -> 8  (2 operations)
+- 10 -> 8 or 12 (2 operations)
+- 14 -> 16 or 12 (2 operations)
+But choosing k = 2 gives 0, since all are already divisible by 2.
+So the answer is 0.
+
+Function signature:
+int getMinimumRecords(vector<int>& recordCounts);
+
+Constraints:
+- 1 <= recordCounts.size() <= ...
+- 1 <= recordCounts[i] <= ...
+
+Notes:
+For a fixed k, the cost to convert x into a multiple of k is:
+    min(x % k, k - (x % k))
+
+You must choose the k >= 2 that minimizes the total cost over all elements.
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
